@@ -1517,14 +1517,14 @@
       <defaultShipping>true</defaultShipping>
       <defaultBilling>true</defaultBilling>
    </item>
-</addresses>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://soap.upskills.in/soap/default?services=customerCustomerRepositoryV1/customerCustomerRepositoryV1PortType/customerCustomerRepositoryV1SaveRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation></con:interface><con:testSuite id="025bac29-bfa0-49fb-94b6-2eac8697eb58" name="GetCustomer"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="46a7b587-edf5-4877-b18c-53e0c8fc73cd" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TC01" searchProperties="true"><con:settings/><con:testStep type="properties" name="Property" id="5b2abcf7-1970-49f4-9af6-b9b07d20f82c"><con:settings/><con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:properties><con:property><con:name>name</con:name><con:value>Anand</con:value></con:property><con:property><con:name>lastname</con:name><con:value>Lucknow12</con:value></con:property><con:property><con:name>email</con:name><con:value>anand@gmail.com</con:value></con:property></con:properties></con:config></con:testStep><con:testStep type="request" name="saveCustomer" id="8646395f-fca2-4338-b0c1-0e8486b79fac"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>customerCustomerRepositoryV1Binding</con:interface><con:operation>customerCustomerRepositoryV1Save</con:operation><con:request name="saveCustomer" id="7fdde042-cee8-4c79-a66a-bd03b4eadfb9"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="bearer ${#TestCase#token}" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://soap.upskills.in/soap/default?services=customerCustomerRepositoryV1</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:def="http://soap.upskills.in/soap/default?services=customerCustomerRepositoryV1">\r
+</addresses>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://soap.upskills.in/soap/default?services=customerCustomerRepositoryV1/customerCustomerRepositoryV1PortType/customerCustomerRepositoryV1SaveRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation></con:interface><con:testSuite id="025bac29-bfa0-49fb-94b6-2eac8697eb58" name="GetCustomer"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="46a7b587-edf5-4877-b18c-53e0c8fc73cd" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TC01" searchProperties="true"><con:settings/><con:testStep type="properties" name="Property" id="5b2abcf7-1970-49f4-9af6-b9b07d20f82c"><con:settings/><con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:properties><con:property><con:name>name</con:name><con:value>Anand</con:value></con:property><con:property><con:name>lastname</con:name><con:value>Gupta</con:value></con:property><con:property><con:name>email</con:name><con:value>anand@gmail.com</con:value></con:property></con:properties></con:config></con:testStep><con:testStep type="request" name="saveCustomer" id="8646395f-fca2-4338-b0c1-0e8486b79fac"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>customerCustomerRepositoryV1Binding</con:interface><con:operation>customerCustomerRepositoryV1Save</con:operation><con:request name="saveCustomer" id="7fdde042-cee8-4c79-a66a-bd03b4eadfb9"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="bearer ${#TestCase#token}" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://soap.upskills.in/soap/default?services=customerCustomerRepositoryV1</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:def="http://soap.upskills.in/soap/default?services=customerCustomerRepositoryV1">\r
    <soap:Header/>\r
    <soap:Body>\r
       <def:customerCustomerRepositoryV1SaveRequest>\r
          <customer>\r
-            <email>rahulp.mit@gmail.com</email>\r
-            <firstname>Rahul</firstname>\r
-            <lastname>Poddar</lastname>\r
+            <email>${Property#email}</email>\r
+            <firstname>${Property#name}</firstname>\r
+            <lastname>${Property#lastname}</lastname>\r
          </customer>\r
       </def:customerCustomerRepositoryV1SaveRequest>\r
    </soap:Body>\r
@@ -1567,7 +1567,7 @@ log.info "GetList passed"</scriptText></con:configuration></con:assertion><con:c
          <customerId>${#TestCase#id}</customerId>\r
       </def:customerCustomerRepositoryV1DeleteByIdRequest>\r
    </soap:Body>\r
-</soap:Envelope>]]></con:request><con:assertion type="SOAP Response" id="3a74cb7f-a85c-4336-9e24-7f69f5f86411"/><con:assertion type="Simple Contains" id="2defd1fb-8eaa-47c8-a64a-383c62b823de" name="Contains"><con:configuration><token>true</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties><con:property><con:name>token</con:name><con:value>f0rf13pxtxp7mftwc23rq6e52yvmi5um</con:value></con:property><con:property><con:name>id</con:name><con:value>3324</con:value></con:property></con:properties></con:testCase><con:testCase id="2e924234-1949-4f85-8ac2-b07fae412d1a" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TestCase" searchProperties="true"><con:settings/><con:testStep type="groovy" name="Groovy Script" id="487cba4a-66f6-4556-895c-475a347e0172"><con:settings/><con:config><script>import jxl.*
+</soap:Envelope>]]></con:request><con:assertion type="SOAP Response" id="3a74cb7f-a85c-4336-9e24-7f69f5f86411"/><con:assertion type="Simple Contains" id="2defd1fb-8eaa-47c8-a64a-383c62b823de" name="Contains"><con:configuration><token>true</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties><con:property><con:name>token</con:name><con:value>f0rf13pxtxp7mftwc23rq6e52yvmi5um</con:value></con:property><con:property><con:name>id</con:name><con:value>4123</con:value></con:property></con:properties></con:testCase><con:testCase id="2e924234-1949-4f85-8ac2-b07fae412d1a" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="DataDriven" searchProperties="true"><con:settings/><con:testStep type="groovy" name="Groovy Script" id="487cba4a-66f6-4556-895c-475a347e0172"><con:settings/><con:config><script>import jxl.*
 def username,lastname,email
 
 String filepath="C:/Users/RahulPoddar/Desktop/SDET/SampleData1.xls"
@@ -1609,4 +1609,47 @@ for (def i=0;i&lt;rowsize;i++)
 	def runner=tc.run(null,false)
 	log.info "Total no. of steps are "+runner.results.size()
 }
-</script></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:sensitiveInformation/></con:soapui-project>
+</script></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="b518bc5b-903b-4337-975e-ed22e6a5951a" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="DataBase" searchProperties="true"><con:settings/><con:testStep type="jdbc" name="JDBC Count" id="f487d9d5-77c9-4015-9dc4-5156b1850bee"><con:settings/><con:config xsi:type="con:JdbcRequestTestStep" convertColumnNamesToUpperCase="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:driver>com.mysql.jdbc.Driver</con:driver><con:connectionString>jdbc:mysql://localhost:3307/SDET3?user=root&amp;password=Manipal</con:connectionString><con:query>select count(*) from customers;</con:query><con:assertion type="GroovyScriptAssertion" id="6e0b2977-bb9c-473f-a258-204f5bf59ed8" name="Script Assertion"><con:configuration><scriptText>import com.eviware.soapui.support.XmlHolder
+
+def res=context.testCase.getTestStepByName('JDBC Count').getPropertyValue("ResponseAsXml")
+
+def holder=new XmlHolder(res)
+def count=holder.getNodeValue('//COUNT')
+log.info count
+
+context.testCase.setPropertyValue("count",count)
+
+</scriptText></con:configuration></con:assertion><con:properties/></con:config></con:testStep><con:testStep type="jdbc" name="JDBCRequest" id="2c2a1b5e-02a5-4b68-9572-b80b6833de5e"><con:settings/><con:config xsi:type="con:JdbcRequestTestStep" convertColumnNamesToUpperCase="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:driver>com.mysql.jdbc.Driver</con:driver><con:connectionString>jdbc:mysql://localhost:3307/SDET3?user=root&amp;password=Manipal</con:connectionString><con:query>select * from customers;</con:query><con:assertion type="JDBC Status" id="3d7b62ad-09e8-4b07-9982-09b34e48290d" name="JDBC Status"/><con:properties/></con:config></con:testStep><con:testStep type="groovy" name="Groovy Script" id="915b60b6-d2fa-40a5-98ca-a087533a6f44"><con:settings/><con:config><script>import com.eviware.soapui.support.XmlHolder
+import jxl.*
+def name,lastname,email
+import com.eviware.soapui.model.testsuite.TestRunner.Status
+
+
+def res=context.testCase.getTestStepByName('JDBCRequest').getPropertyValue("ResponseAsXml")
+def count=context.testCase.getPropertyValue("count").toInteger();
+def holder=new XmlHolder(res)
+log.info res
+log.info count
+
+for (def i=0;i&lt;count+1;i++)
+{
+	name=holder.getNodeValue("//ResultSet/Row[$i]/CUSTOMERS.NAME")
+	lastname=holder.getNodeValue("//ResultSet/Row[$i]/CUSTOMERS.LASTNAME")
+	email=holder.getNodeValue("//ResultSet/Row[$i]/CUSTOMERS.EMAIL")
+
+	def tc=testRunner.testCase.testSuite.project.testSuites['GetCustomer'].testCases['TC01']
+
+	tc.testSteps['Property'].setPropertyValue("name",name)
+	tc.testSteps['Property'].setPropertyValue("lastname",lastname)
+	tc.testSteps['Property'].setPropertyValue("email",email)
+	def runner=tc.run(null,false)
+
+	log.info "Username is "+name
+	log.info "Lastname is "+lastname
+	log.info "Email is "+email
+}
+
+
+
+
+</script></con:config></con:testStep><con:properties><con:property><con:name>count</con:name><con:value>2</con:value></con:property></con:properties></con:testCase><con:properties/></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:sensitiveInformation/></con:soapui-project>
