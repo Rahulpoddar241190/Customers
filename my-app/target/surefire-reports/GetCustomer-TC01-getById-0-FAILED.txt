@@ -1,7 +1,7 @@
 Status: FAILED
 Time Taken: 598
 Size: 734
-Timestamp: Thu Jul 23 13:57:57 IST 2020
+Timestamp: Thu Jul 23 16:46:06 IST 2020
 TestStep: getById
 
 ----------------- Messages ------------------------------
@@ -35,12 +35,12 @@ Response Headers: X-UA-Compatible : IE=edge
 Cache-Control : no-store, no-cache, must-revalidate
 Server : LiteSpeed
 Connection : Keep-Alive
-Set-Cookie : PHPSESSID=8dd46d121d2004e47601a3e9a7d15796; expires=Thu, 23-Jul-2020 09:28:18 GMT; Max-Age=3600; path=/; domain=soap.upskills.in; HttpOnly
+Set-Cookie : PHPSESSID=6dc8f03303703c4cd407e6add659a3c0; expires=Thu, 23-Jul-2020 12:16:27 GMT; Max-Age=3600; path=/; domain=soap.upskills.in; HttpOnly
 Expires : Thu, 19 Nov 1981 08:52:00 GMT
 Pragma : no-cache
 #status# : HTTP/1.1 200 OK
 Content-Length : 734
-Date : Thu, 23 Jul 2020 08:28:18 GMT
+Date : Thu, 23 Jul 2020 11:16:28 GMT
 X-Powered-By : PHP/7.2.29
 Content-Type : application/soap+xml; charset=UTF-8
 
