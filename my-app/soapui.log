@@ -1,21 +1,21 @@
-2020-07-23 16:45:42,151 WARN  [SoapUI] Missing folder [C:\Users\RahulPoddar\Desktop\SDET\Customer\my-app\ext] for external libraries
-2020-07-23 16:45:42,152 INFO  [DefaultSoapUICore] Creating new settings at [C:\WINDOWS\system32\config\systemprofile\soapui-settings.xml]
-2020-07-23 16:45:44,272 INFO  [PluginManager] 0 plugins loaded in 3 ms
-2020-07-23 16:45:44,272 INFO  [DefaultSoapUICore] All plugins loaded
-2020-07-23 16:45:46,475 INFO  [WsdlProject] Loaded project from [file:/C:/Users/RahulPoddar/Desktop/SDET/Customer/my-app/Customer-soapui-project.xml]
-2020-07-23 16:45:46,486 INFO  [SoapUITestCaseRunner] Running SoapUI tests in project [Customer]
-2020-07-23 16:45:46,488 INFO  [SoapUITestCaseRunner] Running Project [Customer], runType = SEQUENTIAL
-2020-07-23 16:45:46,528 INFO  [SoapUITestCaseRunner] Running SoapUI testcase [TC01]
-2020-07-23 16:45:46,540 INFO  [SoapUITestCaseRunner] running step [Property]
-2020-07-23 16:45:46,615 INFO  [SoapUITestCaseRunner] running step [saveCustomer]
-2020-07-23 16:45:51,414 INFO  [log] <env:Envelope xmlns:env="http://www.w3.org/2003/05/soap-envelope" xmlns:ns1="http://soap.upskills.in/soap/default?services=customerCustomerRepositoryV1">
+2020-07-23 16:49:22,749 WARN  [SoapUI] Missing folder [C:\Users\RahulPoddar\Desktop\SDET\Customer\my-app\ext] for external libraries
+2020-07-23 16:49:22,750 INFO  [DefaultSoapUICore] Creating new settings at [C:\WINDOWS\system32\config\systemprofile\soapui-settings.xml]
+2020-07-23 16:49:24,813 INFO  [PluginManager] 0 plugins loaded in 10 ms
+2020-07-23 16:49:24,813 INFO  [DefaultSoapUICore] All plugins loaded
+2020-07-23 16:49:26,838 INFO  [WsdlProject] Loaded project from [file:/C:/Users/RahulPoddar/Desktop/SDET/Customer/my-app/Customer-soapui-project.xml]
+2020-07-23 16:49:26,845 INFO  [SoapUITestCaseRunner] Running SoapUI tests in project [Customer]
+2020-07-23 16:49:26,847 INFO  [SoapUITestCaseRunner] Running Project [Customer], runType = SEQUENTIAL
+2020-07-23 16:49:26,873 INFO  [SoapUITestCaseRunner] Running SoapUI testcase [TC01]
+2020-07-23 16:49:26,903 INFO  [SoapUITestCaseRunner] running step [Property]
+2020-07-23 16:49:26,983 INFO  [SoapUITestCaseRunner] running step [saveCustomer]
+2020-07-23 16:49:29,213 INFO  [log] <env:Envelope xmlns:env="http://www.w3.org/2003/05/soap-envelope" xmlns:ns1="http://soap.upskills.in/soap/default?services=customerCustomerRepositoryV1">
    <env:Body>
       <ns1:customerCustomerRepositoryV1SaveResponse>
          <result>
-            <id>4224</id>
+            <id>4233</id>
             <groupId>1</groupId>
-            <createdAt>2020-07-23 11:16:08</createdAt>
-            <updatedAt>2020-07-23 11:16:08</updatedAt>
+            <createdAt>2020-07-23 11:19:48</createdAt>
+            <updatedAt>2020-07-23 11:19:48</updatedAt>
             <createdIn>Default Store View</createdIn>
             <email>anand@gmail.com</email>
             <firstname>Anand</firstname>
@@ -31,31 +31,31 @@
       </ns1:customerCustomerRepositoryV1SaveResponse>
    </env:Body>
 </env:Envelope>
-2020-07-23 16:45:51,894 INFO  [log] Customer_id is 4224
-2020-07-23 16:45:51,897 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
-2020-07-23 16:45:51,897 INFO  [SoapUITestCaseRunner] Assertion [Script Assertion] has status VALID
-2020-07-23 16:45:51,897 INFO  [SoapUITestCaseRunner] running step [getList]
-2020-07-23 16:45:57,442 INFO  [log] GetList passed
-2020-07-23 16:45:57,442 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
-2020-07-23 16:45:57,442 INFO  [SoapUITestCaseRunner] Assertion [Script Assertion] has status VALID
-2020-07-23 16:45:57,442 INFO  [SoapUITestCaseRunner] running step [getById]
-2020-07-23 16:45:58,231 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
-2020-07-23 16:45:58,231 INFO  [SoapUITestCaseRunner] Assertion [Contains] has status VALID
-2020-07-23 16:45:58,231 INFO  [SoapUITestCaseRunner] running step [deleteId]
-2020-07-23 16:45:59,445 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
-2020-07-23 16:45:59,445 INFO  [SoapUITestCaseRunner] Assertion [Contains] has status VALID
-2020-07-23 16:45:59,450 INFO  [SoapUITestCaseRunner] Finished running SoapUI testcase [TC01], time taken: 12886ms, status: FINISHED
-2020-07-23 16:45:59,451 INFO  [SoapUITestCaseRunner] Running SoapUI testcase [DataDriven]
-2020-07-23 16:45:59,451 INFO  [SoapUITestCaseRunner] running step [Groovy Script]
-2020-07-23 16:45:59,836 INFO  [log] 3
-2020-07-23 16:45:59,836 INFO  [log] 3
-2020-07-23 16:45:59,914 INFO  [log] Username is username
-2020-07-23 16:45:59,914 INFO  [log] Lastname is lastname
-2020-07-23 16:45:59,915 INFO  [log] Email is email
-2020-07-23 16:45:59,916 INFO  [SoapUITestCaseRunner] Running SoapUI testcase [TC01]
-2020-07-23 16:45:59,916 INFO  [SoapUITestCaseRunner] running step [Property]
-2020-07-23 16:45:59,916 INFO  [SoapUITestCaseRunner] running step [saveCustomer]
-2020-07-23 16:46:00,695 INFO  [log] <env:Envelope xmlns:env="http://www.w3.org/2003/05/soap-envelope">
+2020-07-23 16:49:29,712 INFO  [log] Customer_id is 4233
+2020-07-23 16:49:29,715 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+2020-07-23 16:49:29,715 INFO  [SoapUITestCaseRunner] Assertion [Script Assertion] has status VALID
+2020-07-23 16:49:29,715 INFO  [SoapUITestCaseRunner] running step [getList]
+2020-07-23 16:49:34,661 INFO  [log] GetList passed
+2020-07-23 16:49:34,661 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+2020-07-23 16:49:34,661 INFO  [SoapUITestCaseRunner] Assertion [Script Assertion] has status VALID
+2020-07-23 16:49:34,661 INFO  [SoapUITestCaseRunner] running step [getById]
+2020-07-23 16:49:35,317 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+2020-07-23 16:49:35,317 INFO  [SoapUITestCaseRunner] Assertion [Contains] has status UNKNOWN
+2020-07-23 16:49:35,317 INFO  [SoapUITestCaseRunner] running step [deleteId]
+2020-07-23 16:49:36,231 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+2020-07-23 16:49:36,231 INFO  [SoapUITestCaseRunner] Assertion [Contains] has status VALID
+2020-07-23 16:49:36,233 INFO  [SoapUITestCaseRunner] Finished running SoapUI testcase [TC01], time taken: 9306ms, status: FINISHED
+2020-07-23 16:49:36,236 INFO  [SoapUITestCaseRunner] Running SoapUI testcase [DataDriven]
+2020-07-23 16:49:36,237 INFO  [SoapUITestCaseRunner] running step [Groovy Script]
+2020-07-23 16:49:36,626 INFO  [log] 3
+2020-07-23 16:49:36,626 INFO  [log] 3
+2020-07-23 16:49:36,724 INFO  [log] Username is username
+2020-07-23 16:49:36,724 INFO  [log] Lastname is lastname
+2020-07-23 16:49:36,724 INFO  [log] Email is email
+2020-07-23 16:49:36,725 INFO  [SoapUITestCaseRunner] Running SoapUI testcase [TC01]
+2020-07-23 16:49:36,725 INFO  [SoapUITestCaseRunner] running step [Property]
+2020-07-23 16:49:36,726 INFO  [SoapUITestCaseRunner] running step [saveCustomer]
+2020-07-23 16:49:37,416 INFO  [log] <env:Envelope xmlns:env="http://www.w3.org/2003/05/soap-envelope">
    <env:Body>
       <env:Fault>
          <env:Code>
@@ -67,34 +67,37 @@
       </env:Fault>
    </env:Body>
 </env:Envelope>
-2020-07-23 16:46:00,700 INFO  [log] Customer_id is null
-2020-07-23 16:46:00,700 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
-2020-07-23 16:46:00,700 INFO  [SoapUITestCaseRunner] Assertion [Script Assertion] has status VALID
-2020-07-23 16:46:00,700 INFO  [SoapUITestCaseRunner] running step [getList]
-2020-07-23 16:46:06,920 INFO  [log] GetList passed
-2020-07-23 16:46:06,921 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
-2020-07-23 16:46:06,921 INFO  [SoapUITestCaseRunner] Assertion [Script Assertion] has status VALID
-2020-07-23 16:46:06,921 INFO  [SoapUITestCaseRunner] running step [getById]
-2020-07-23 16:46:07,520 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
-2020-07-23 16:46:07,521 INFO  [SoapUITestCaseRunner] Assertion [Contains] has status FAILED
-2020-07-23 16:46:07,522 ERROR [SoapUITestCaseRunner] ASSERTION FAILED -> Missing token [false] in Response
-2020-07-23 16:46:07,522 ERROR [SoapUITestCaseRunner] getById failed, exporting to [C:\Users\RahulPoddar\Desktop\SDET\Customer\my-app\target/surefire-reports\GetCustomer-TC01-getById-0-FAILED.txt]
-2020-07-23 16:46:07,527 INFO  [SoapUITestCaseRunner] Finished running SoapUI testcase [TC01], time taken: 7601ms, status: FAILED
-2020-07-23 16:46:07,536 INFO  [log] Total no. of steps are 4
-2020-07-23 16:46:07,537 INFO  [log] Username is Rahul
-2020-07-23 16:46:07,537 INFO  [log] Lastname is Kolkata12
-2020-07-23 16:46:07,537 INFO  [log] Email is rahul@gmail.com
-2020-07-23 16:46:07,538 INFO  [SoapUITestCaseRunner] Running SoapUI testcase [TC01]
-2020-07-23 16:46:07,538 INFO  [SoapUITestCaseRunner] running step [Property]
-2020-07-23 16:46:07,538 INFO  [SoapUITestCaseRunner] running step [saveCustomer]
-2020-07-23 16:46:08,262 INFO  [log] <env:Envelope xmlns:env="http://www.w3.org/2003/05/soap-envelope" xmlns:ns1="http://soap.upskills.in/soap/default?services=customerCustomerRepositoryV1">
+2020-07-23 16:49:37,422 INFO  [log] Customer_id is null
+2020-07-23 16:49:37,423 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+2020-07-23 16:49:37,423 INFO  [SoapUITestCaseRunner] Assertion [Script Assertion] has status VALID
+2020-07-23 16:49:37,424 INFO  [SoapUITestCaseRunner] running step [getList]
+2020-07-23 16:49:41,876 INFO  [log] GetList passed
+2020-07-23 16:49:41,877 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+2020-07-23 16:49:41,877 INFO  [SoapUITestCaseRunner] Assertion [Script Assertion] has status VALID
+2020-07-23 16:49:41,878 INFO  [SoapUITestCaseRunner] running step [getById]
+2020-07-23 16:49:42,897 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+2020-07-23 16:49:42,897 INFO  [SoapUITestCaseRunner] Assertion [Contains] has status UNKNOWN
+2020-07-23 16:49:42,897 INFO  [SoapUITestCaseRunner] running step [deleteId]
+2020-07-23 16:49:44,036 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+2020-07-23 16:49:44,036 INFO  [SoapUITestCaseRunner] Assertion [Contains] has status FAILED
+2020-07-23 16:49:44,037 ERROR [SoapUITestCaseRunner] ASSERTION FAILED -> Missing token [true] in Response
+2020-07-23 16:49:44,037 ERROR [SoapUITestCaseRunner] deleteId failed, exporting to [C:\Users\RahulPoddar\Desktop\SDET\Customer\my-app\target/surefire-reports\GetCustomer-TC01-deleteId-0-FAILED.txt]
+2020-07-23 16:49:44,042 INFO  [SoapUITestCaseRunner] Finished running SoapUI testcase [TC01], time taken: 7307ms, status: FAILED
+2020-07-23 16:49:44,059 INFO  [log] Total no. of steps are 5
+2020-07-23 16:49:44,059 INFO  [log] Username is Rahul
+2020-07-23 16:49:44,060 INFO  [log] Lastname is Kolkata12
+2020-07-23 16:49:44,060 INFO  [log] Email is rahul@gmail.com
+2020-07-23 16:49:44,060 INFO  [SoapUITestCaseRunner] Running SoapUI testcase [TC01]
+2020-07-23 16:49:44,060 INFO  [SoapUITestCaseRunner] running step [Property]
+2020-07-23 16:49:44,061 INFO  [SoapUITestCaseRunner] running step [saveCustomer]
+2020-07-23 16:49:46,375 INFO  [log] <env:Envelope xmlns:env="http://www.w3.org/2003/05/soap-envelope" xmlns:ns1="http://soap.upskills.in/soap/default?services=customerCustomerRepositoryV1">
    <env:Body>
       <ns1:customerCustomerRepositoryV1SaveResponse>
          <result>
-            <id>4225</id>
+            <id>4235</id>
             <groupId>1</groupId>
-            <createdAt>2020-07-23 11:16:28</createdAt>
-            <updatedAt>2020-07-23 11:16:28</updatedAt>
+            <createdAt>2020-07-23 11:20:05</createdAt>
+            <updatedAt>2020-07-23 11:20:05</updatedAt>
             <createdIn>Default Store View</createdIn>
             <email>rahul@gmail.com</email>
             <firstname>Rahul</firstname>
@@ -110,35 +113,35 @@
       </ns1:customerCustomerRepositoryV1SaveResponse>
    </env:Body>
 </env:Envelope>
-2020-07-23 16:46:08,265 INFO  [log] Customer_id is 4225
-2020-07-23 16:46:08,266 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
-2020-07-23 16:46:08,266 INFO  [SoapUITestCaseRunner] Assertion [Script Assertion] has status VALID
-2020-07-23 16:46:08,267 INFO  [SoapUITestCaseRunner] running step [getList]
-2020-07-23 16:46:12,293 INFO  [log] GetList passed
-2020-07-23 16:46:12,293 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
-2020-07-23 16:46:12,293 INFO  [SoapUITestCaseRunner] Assertion [Script Assertion] has status VALID
-2020-07-23 16:46:12,294 INFO  [SoapUITestCaseRunner] running step [getById]
-2020-07-23 16:46:12,942 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
-2020-07-23 16:46:12,942 INFO  [SoapUITestCaseRunner] Assertion [Contains] has status VALID
-2020-07-23 16:46:12,942 INFO  [SoapUITestCaseRunner] running step [deleteId]
-2020-07-23 16:46:13,893 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
-2020-07-23 16:46:13,893 INFO  [SoapUITestCaseRunner] Assertion [Contains] has status VALID
-2020-07-23 16:46:13,893 INFO  [SoapUITestCaseRunner] Finished running SoapUI testcase [TC01], time taken: 6352ms, status: FINISHED
-2020-07-23 16:46:13,894 INFO  [log] Total no. of steps are 5
-2020-07-23 16:46:13,894 INFO  [log] Username is Anand
-2020-07-23 16:46:13,894 INFO  [log] Lastname is Lucknow12
-2020-07-23 16:46:13,894 INFO  [log] Email is anand@gmail.com
-2020-07-23 16:46:13,894 INFO  [SoapUITestCaseRunner] Running SoapUI testcase [TC01]
-2020-07-23 16:46:13,895 INFO  [SoapUITestCaseRunner] running step [Property]
-2020-07-23 16:46:13,895 INFO  [SoapUITestCaseRunner] running step [saveCustomer]
-2020-07-23 16:46:14,596 INFO  [log] <env:Envelope xmlns:env="http://www.w3.org/2003/05/soap-envelope" xmlns:ns1="http://soap.upskills.in/soap/default?services=customerCustomerRepositoryV1">
+2020-07-23 16:49:46,377 INFO  [log] Customer_id is 4235
+2020-07-23 16:49:46,377 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+2020-07-23 16:49:46,377 INFO  [SoapUITestCaseRunner] Assertion [Script Assertion] has status VALID
+2020-07-23 16:49:46,377 INFO  [SoapUITestCaseRunner] running step [getList]
+2020-07-23 16:49:53,061 INFO  [log] GetList passed
+2020-07-23 16:49:53,061 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+2020-07-23 16:49:53,061 INFO  [SoapUITestCaseRunner] Assertion [Script Assertion] has status VALID
+2020-07-23 16:49:53,061 INFO  [SoapUITestCaseRunner] running step [getById]
+2020-07-23 16:49:54,057 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+2020-07-23 16:49:54,058 INFO  [SoapUITestCaseRunner] Assertion [Contains] has status UNKNOWN
+2020-07-23 16:49:54,058 INFO  [SoapUITestCaseRunner] running step [deleteId]
+2020-07-23 16:49:54,876 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+2020-07-23 16:49:54,876 INFO  [SoapUITestCaseRunner] Assertion [Contains] has status VALID
+2020-07-23 16:49:54,876 INFO  [SoapUITestCaseRunner] Finished running SoapUI testcase [TC01], time taken: 10812ms, status: FINISHED
+2020-07-23 16:49:54,877 INFO  [log] Total no. of steps are 5
+2020-07-23 16:49:54,877 INFO  [log] Username is Anand
+2020-07-23 16:49:54,878 INFO  [log] Lastname is Lucknow12
+2020-07-23 16:49:54,878 INFO  [log] Email is anand@gmail.com
+2020-07-23 16:49:54,878 INFO  [SoapUITestCaseRunner] Running SoapUI testcase [TC01]
+2020-07-23 16:49:54,878 INFO  [SoapUITestCaseRunner] running step [Property]
+2020-07-23 16:49:54,878 INFO  [SoapUITestCaseRunner] running step [saveCustomer]
+2020-07-23 16:49:55,698 INFO  [log] <env:Envelope xmlns:env="http://www.w3.org/2003/05/soap-envelope" xmlns:ns1="http://soap.upskills.in/soap/default?services=customerCustomerRepositoryV1">
    <env:Body>
       <ns1:customerCustomerRepositoryV1SaveResponse>
          <result>
-            <id>4226</id>
+            <id>4236</id>
             <groupId>1</groupId>
-            <createdAt>2020-07-23 11:16:34</createdAt>
-            <updatedAt>2020-07-23 11:16:34</updatedAt>
+            <createdAt>2020-07-23 11:20:16</createdAt>
+            <updatedAt>2020-07-23 11:20:16</updatedAt>
             <createdIn>Default Store View</createdIn>
             <email>anand@gmail.com</email>
             <firstname>Anand</firstname>
@@ -154,30 +157,30 @@
       </ns1:customerCustomerRepositoryV1SaveResponse>
    </env:Body>
 </env:Envelope>
-2020-07-23 16:46:14,598 INFO  [log] Customer_id is 4226
-2020-07-23 16:46:14,599 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
-2020-07-23 16:46:14,599 INFO  [SoapUITestCaseRunner] Assertion [Script Assertion] has status VALID
-2020-07-23 16:46:14,599 INFO  [SoapUITestCaseRunner] running step [getList]
-2020-07-23 16:46:18,207 INFO  [log] GetList passed
-2020-07-23 16:46:18,208 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
-2020-07-23 16:46:18,208 INFO  [SoapUITestCaseRunner] Assertion [Script Assertion] has status VALID
-2020-07-23 16:46:18,208 INFO  [SoapUITestCaseRunner] running step [getById]
-2020-07-23 16:46:18,912 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
-2020-07-23 16:46:18,912 INFO  [SoapUITestCaseRunner] Assertion [Contains] has status VALID
-2020-07-23 16:46:18,912 INFO  [SoapUITestCaseRunner] running step [deleteId]
-2020-07-23 16:46:19,841 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
-2020-07-23 16:46:19,841 INFO  [SoapUITestCaseRunner] Assertion [Contains] has status VALID
-2020-07-23 16:46:19,842 INFO  [SoapUITestCaseRunner] Finished running SoapUI testcase [TC01], time taken: 5942ms, status: FINISHED
-2020-07-23 16:46:19,842 INFO  [log] Total no. of steps are 5
-2020-07-23 16:46:19,843 INFO  [SoapUITestCaseRunner] Finished running SoapUI testcase [DataDriven], time taken: 20390ms, status: FINISHED
-2020-07-23 16:46:19,844 INFO  [SoapUITestCaseRunner] Running SoapUI testcase [DataBase]
-2020-07-23 16:46:19,849 INFO  [SoapUITestCaseRunner] running step [JDBC Count]
-2020-07-23 16:46:20,415 INFO  [log] 2
-2020-07-23 16:46:20,419 INFO  [SoapUITestCaseRunner] Assertion [Script Assertion] has status VALID
-2020-07-23 16:46:20,419 INFO  [SoapUITestCaseRunner] running step [JDBCRequest]
-2020-07-23 16:46:20,470 INFO  [SoapUITestCaseRunner] Assertion [JDBC Status] has status VALID
-2020-07-23 16:46:20,470 INFO  [SoapUITestCaseRunner] running step [Groovy Script]
-2020-07-23 16:46:20,557 INFO  [log] <Results>
+2020-07-23 16:49:55,700 INFO  [log] Customer_id is 4236
+2020-07-23 16:49:55,700 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+2020-07-23 16:49:55,700 INFO  [SoapUITestCaseRunner] Assertion [Script Assertion] has status VALID
+2020-07-23 16:49:55,701 INFO  [SoapUITestCaseRunner] running step [getList]
+2020-07-23 16:49:59,241 INFO  [log] GetList passed
+2020-07-23 16:49:59,242 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+2020-07-23 16:49:59,242 INFO  [SoapUITestCaseRunner] Assertion [Script Assertion] has status VALID
+2020-07-23 16:49:59,242 INFO  [SoapUITestCaseRunner] running step [getById]
+2020-07-23 16:49:59,884 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+2020-07-23 16:49:59,884 INFO  [SoapUITestCaseRunner] Assertion [Contains] has status UNKNOWN
+2020-07-23 16:49:59,884 INFO  [SoapUITestCaseRunner] running step [deleteId]
+2020-07-23 16:50:00,885 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+2020-07-23 16:50:00,885 INFO  [SoapUITestCaseRunner] Assertion [Contains] has status VALID
+2020-07-23 16:50:00,886 INFO  [SoapUITestCaseRunner] Finished running SoapUI testcase [TC01], time taken: 6003ms, status: FINISHED
+2020-07-23 16:50:00,886 INFO  [log] Total no. of steps are 5
+2020-07-23 16:50:00,887 INFO  [SoapUITestCaseRunner] Finished running SoapUI testcase [DataDriven], time taken: 24649ms, status: FINISHED
+2020-07-23 16:50:00,889 INFO  [SoapUITestCaseRunner] Running SoapUI testcase [DataBase]
+2020-07-23 16:50:00,894 INFO  [SoapUITestCaseRunner] running step [JDBC Count]
+2020-07-23 16:50:02,237 INFO  [log] 2
+2020-07-23 16:50:02,238 INFO  [SoapUITestCaseRunner] Assertion [Script Assertion] has status VALID
+2020-07-23 16:50:02,239 INFO  [SoapUITestCaseRunner] running step [JDBCRequest]
+2020-07-23 16:50:02,286 INFO  [SoapUITestCaseRunner] Assertion [JDBC Status] has status VALID
+2020-07-23 16:50:02,286 INFO  [SoapUITestCaseRunner] running step [Groovy Script]
+2020-07-23 16:50:02,382 INFO  [log] <Results>
     <ResultSet fetchSize="0">
         <Row rowNumber="1">
             <CUSTOMERS.NAME>Rahul</CUSTOMERS.NAME>
@@ -192,18 +195,18 @@
     </ResultSet>
 </Results>
 
-2020-07-23 16:46:20,557 INFO  [log] 2
-2020-07-23 16:46:20,582 INFO  [SoapUITestCaseRunner] Running SoapUI testcase [TC01]
-2020-07-23 16:46:20,583 INFO  [SoapUITestCaseRunner] running step [Property]
-2020-07-23 16:46:20,584 INFO  [SoapUITestCaseRunner] running step [saveCustomer]
-2020-07-23 16:46:21,390 INFO  [log] <env:Envelope xmlns:env="http://www.w3.org/2003/05/soap-envelope" xmlns:ns1="http://soap.upskills.in/soap/default?services=customerCustomerRepositoryV1">
+2020-07-23 16:50:02,382 INFO  [log] 2
+2020-07-23 16:50:02,414 INFO  [SoapUITestCaseRunner] Running SoapUI testcase [TC01]
+2020-07-23 16:50:02,414 INFO  [SoapUITestCaseRunner] running step [Property]
+2020-07-23 16:50:02,414 INFO  [SoapUITestCaseRunner] running step [saveCustomer]
+2020-07-23 16:50:03,194 INFO  [log] <env:Envelope xmlns:env="http://www.w3.org/2003/05/soap-envelope" xmlns:ns1="http://soap.upskills.in/soap/default?services=customerCustomerRepositoryV1">
    <env:Body>
       <ns1:customerCustomerRepositoryV1SaveResponse>
          <result>
-            <id>4227</id>
+            <id>4237</id>
             <groupId>1</groupId>
-            <createdAt>2020-07-23 11:16:41</createdAt>
-            <updatedAt>2020-07-23 11:16:41</updatedAt>
+            <createdAt>2020-07-23 11:20:23</createdAt>
+            <updatedAt>2020-07-23 11:20:23</updatedAt>
             <createdIn>Default Store View</createdIn>
             <email>rahul@gmail.com</email>
             <firstname>Rahul</firstname>
@@ -219,34 +222,34 @@
       </ns1:customerCustomerRepositoryV1SaveResponse>
    </env:Body>
 </env:Envelope>
-2020-07-23 16:46:21,392 INFO  [log] Customer_id is 4227
-2020-07-23 16:46:21,392 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
-2020-07-23 16:46:21,392 INFO  [SoapUITestCaseRunner] Assertion [Script Assertion] has status VALID
-2020-07-23 16:46:21,392 INFO  [SoapUITestCaseRunner] running step [getList]
-2020-07-23 16:46:25,587 INFO  [log] GetList passed
-2020-07-23 16:46:25,588 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
-2020-07-23 16:46:25,588 INFO  [SoapUITestCaseRunner] Assertion [Script Assertion] has status VALID
-2020-07-23 16:46:25,588 INFO  [SoapUITestCaseRunner] running step [getById]
-2020-07-23 16:46:26,288 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
-2020-07-23 16:46:26,288 INFO  [SoapUITestCaseRunner] Assertion [Contains] has status VALID
-2020-07-23 16:46:26,288 INFO  [SoapUITestCaseRunner] running step [deleteId]
-2020-07-23 16:46:27,259 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
-2020-07-23 16:46:27,259 INFO  [SoapUITestCaseRunner] Assertion [Contains] has status VALID
-2020-07-23 16:46:27,260 INFO  [SoapUITestCaseRunner] Finished running SoapUI testcase [TC01], time taken: 6672ms, status: FINISHED
-2020-07-23 16:46:27,260 INFO  [log] Username is Rahul
-2020-07-23 16:46:27,260 INFO  [log] Lastname is Poddar
-2020-07-23 16:46:27,260 INFO  [log] Email is rahul@gmail.com
-2020-07-23 16:46:27,265 INFO  [SoapUITestCaseRunner] Running SoapUI testcase [TC01]
-2020-07-23 16:46:27,265 INFO  [SoapUITestCaseRunner] running step [Property]
-2020-07-23 16:46:27,265 INFO  [SoapUITestCaseRunner] running step [saveCustomer]
-2020-07-23 16:46:28,079 INFO  [log] <env:Envelope xmlns:env="http://www.w3.org/2003/05/soap-envelope" xmlns:ns1="http://soap.upskills.in/soap/default?services=customerCustomerRepositoryV1">
+2020-07-23 16:50:03,196 INFO  [log] Customer_id is 4237
+2020-07-23 16:50:03,196 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+2020-07-23 16:50:03,197 INFO  [SoapUITestCaseRunner] Assertion [Script Assertion] has status VALID
+2020-07-23 16:50:03,197 INFO  [SoapUITestCaseRunner] running step [getList]
+2020-07-23 16:50:07,499 INFO  [log] GetList passed
+2020-07-23 16:50:07,499 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+2020-07-23 16:50:07,500 INFO  [SoapUITestCaseRunner] Assertion [Script Assertion] has status VALID
+2020-07-23 16:50:07,500 INFO  [SoapUITestCaseRunner] running step [getById]
+2020-07-23 16:50:08,225 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+2020-07-23 16:50:08,225 INFO  [SoapUITestCaseRunner] Assertion [Contains] has status UNKNOWN
+2020-07-23 16:50:08,226 INFO  [SoapUITestCaseRunner] running step [deleteId]
+2020-07-23 16:50:09,312 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+2020-07-23 16:50:09,312 INFO  [SoapUITestCaseRunner] Assertion [Contains] has status VALID
+2020-07-23 16:50:09,312 INFO  [SoapUITestCaseRunner] Finished running SoapUI testcase [TC01], time taken: 6894ms, status: FINISHED
+2020-07-23 16:50:09,313 INFO  [log] Username is Rahul
+2020-07-23 16:50:09,313 INFO  [log] Lastname is Poddar
+2020-07-23 16:50:09,313 INFO  [log] Email is rahul@gmail.com
+2020-07-23 16:50:09,318 INFO  [SoapUITestCaseRunner] Running SoapUI testcase [TC01]
+2020-07-23 16:50:09,318 INFO  [SoapUITestCaseRunner] running step [Property]
+2020-07-23 16:50:09,318 INFO  [SoapUITestCaseRunner] running step [saveCustomer]
+2020-07-23 16:50:10,133 INFO  [log] <env:Envelope xmlns:env="http://www.w3.org/2003/05/soap-envelope" xmlns:ns1="http://soap.upskills.in/soap/default?services=customerCustomerRepositoryV1">
    <env:Body>
       <ns1:customerCustomerRepositoryV1SaveResponse>
          <result>
-            <id>4228</id>
+            <id>4238</id>
             <groupId>1</groupId>
-            <createdAt>2020-07-23 11:16:48</createdAt>
-            <updatedAt>2020-07-23 11:16:48</updatedAt>
+            <createdAt>2020-07-23 11:20:30</createdAt>
+            <updatedAt>2020-07-23 11:20:30</updatedAt>
             <createdIn>Default Store View</createdIn>
             <email>anand@gmail.com</email>
             <firstname>Anand</firstname>
@@ -262,22 +265,22 @@
       </ns1:customerCustomerRepositoryV1SaveResponse>
    </env:Body>
 </env:Envelope>
-2020-07-23 16:46:28,080 INFO  [log] Customer_id is 4228
-2020-07-23 16:46:28,080 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
-2020-07-23 16:46:28,080 INFO  [SoapUITestCaseRunner] Assertion [Script Assertion] has status VALID
-2020-07-23 16:46:28,080 INFO  [SoapUITestCaseRunner] running step [getList]
-2020-07-23 16:46:33,593 INFO  [log] GetList passed
-2020-07-23 16:46:33,593 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
-2020-07-23 16:46:33,593 INFO  [SoapUITestCaseRunner] Assertion [Script Assertion] has status VALID
-2020-07-23 16:46:33,594 INFO  [SoapUITestCaseRunner] running step [getById]
-2020-07-23 16:46:34,377 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
-2020-07-23 16:46:34,378 INFO  [SoapUITestCaseRunner] Assertion [Contains] has status VALID
-2020-07-23 16:46:34,378 INFO  [SoapUITestCaseRunner] running step [deleteId]
-2020-07-23 16:46:35,153 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
-2020-07-23 16:46:35,153 INFO  [SoapUITestCaseRunner] Assertion [Contains] has status VALID
-2020-07-23 16:46:35,153 INFO  [SoapUITestCaseRunner] Finished running SoapUI testcase [TC01], time taken: 7885ms, status: FINISHED
-2020-07-23 16:46:35,153 INFO  [log] Username is Anand
-2020-07-23 16:46:35,154 INFO  [log] Lastname is Gupta
-2020-07-23 16:46:35,154 INFO  [log] Email is anand@gmail.com
-2020-07-23 16:46:35,154 INFO  [SoapUITestCaseRunner] Finished running SoapUI testcase [DataBase], time taken: 15202ms, status: FINISHED
-2020-07-23 16:46:35,154 INFO  [SoapUITestCaseRunner] Project [Customer] finished with status [FINISHED] in 48660ms
+2020-07-23 16:50:10,135 INFO  [log] Customer_id is 4238
+2020-07-23 16:50:10,136 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+2020-07-23 16:50:10,136 INFO  [SoapUITestCaseRunner] Assertion [Script Assertion] has status VALID
+2020-07-23 16:50:10,136 INFO  [SoapUITestCaseRunner] running step [getList]
+2020-07-23 16:50:14,333 INFO  [log] GetList passed
+2020-07-23 16:50:14,333 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+2020-07-23 16:50:14,333 INFO  [SoapUITestCaseRunner] Assertion [Script Assertion] has status VALID
+2020-07-23 16:50:14,333 INFO  [SoapUITestCaseRunner] running step [getById]
+2020-07-23 16:50:15,365 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+2020-07-23 16:50:15,365 INFO  [SoapUITestCaseRunner] Assertion [Contains] has status UNKNOWN
+2020-07-23 16:50:15,365 INFO  [SoapUITestCaseRunner] running step [deleteId]
+2020-07-23 16:50:17,106 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+2020-07-23 16:50:17,106 INFO  [SoapUITestCaseRunner] Assertion [Contains] has status VALID
+2020-07-23 16:50:17,106 INFO  [SoapUITestCaseRunner] Finished running SoapUI testcase [TC01], time taken: 7785ms, status: FINISHED
+2020-07-23 16:50:17,107 INFO  [log] Username is Anand
+2020-07-23 16:50:17,107 INFO  [log] Lastname is Gupta
+2020-07-23 16:50:17,107 INFO  [log] Email is anand@gmail.com
+2020-07-23 16:50:17,107 INFO  [SoapUITestCaseRunner] Finished running SoapUI testcase [DataBase], time taken: 16140ms, status: FINISHED
+2020-07-23 16:50:17,107 INFO  [SoapUITestCaseRunner] Project [Customer] finished with status [FINISHED] in 50245ms
